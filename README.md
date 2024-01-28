@@ -1,2 +1,2 @@
 # Grid_world
-Grid world game achieved
+Grid world game achieved by reinforcement learning
