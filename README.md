@@ -57,7 +57,7 @@ Repeat the process of letting the robot start from the beginning, taking actions
 
 **Results After Five Iterations:** 
 
-<img src="./figure/fifth" alt="image-20240129094509899" style="zoom:67%;" />
+<img src="https://github.com/algellar/Grid_world/blob/main/figure/fifth.png" alt="image-20240129094509899" style="zoom:67%;" />
 
 It can be observed that the state value function stabilizes after four updates. Therefore, the policy is no longer updated, indicating that the policy for each cell has reached its optimum.
 
