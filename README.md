@@ -56,9 +56,9 @@ Repeat the process of letting the robot start from the beginning, taking actions
 (Note: Values for walls and boundaries are not updated in the state value function. Also, due to returning to the starting point after reaching the endpoint or falling into a trap, no updates are considered for these states.)
 
 **Results After Five Iterations:** 
-
-<img src="https://github.com/algellar/Grid_world/blob/main/figure/fifth.png" alt="image-20240129094509899" style="margin: 0 auto;zoom:50%;" />
-
+<div align=center>
+<img src="https://github.com/algellar/Grid_world/blob/main/figure/fifth.png" alt="image-20240129094509899" style="zoom:50%;" />
+</div>
 It can be observed that the state value function stabilizes after four updates. Therefore, the policy is no longer updated, indicating that the policy for each cell has reached its optimum.
 
 If the time taken by the robot to walk is considered equivalent to the number of steps, then when the policy is optimal, the number of steps should be minimized. The following graph illustrates the relationship between the number of updates and the number of steps:
