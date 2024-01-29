@@ -43,15 +43,21 @@ Repeat the process of letting the robot start from the beginning, taking actions
 
 **Grid World Map:** 
 
-<img src="C:\Users\admin\AppData\Roaming\Typora\typora-user-images\map.png" alt="image-20240129094859923" style="zoom:67%;" />
+<div align=center>
+<img src="https://github.com/algellar/Grid_world/blob/main/figure/map.png" width = "300" height = "270" />
+</div>
 
 **Initial State Values:** 
 
-<img src="C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20240129094829153.png" alt="image-20240129094829153" style="zoom:67%;" />
+<div align=center>
+<img src="https://github.com/algellar/Grid_world/blob/main/figure/init.png" width = "300" height = "270" />
+</div>
 
 **After One Iteration until Convergence of the State Value Function:** 
 
-<img src="C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20240129094807196.png" alt="image-20240129094807196" style="zoom:67%;" />
+<div align=center>
+<img src="https://github.com/algellar/Grid_world/blob/main/figure/first.png" width = "300" height = "270" />
+</div>
 
 (Note: Values for walls and boundaries are not updated in the state value function. Also, due to returning to the starting point after reaching the endpoint or falling into a trap, no updates are considered for these states.)
 
@@ -62,6 +68,9 @@ Repeat the process of letting the robot start from the beginning, taking actions
 It can be observed that the state value function stabilizes after four updates. Therefore, the policy is no longer updated, indicating that the policy for each cell has reached its optimum.
 
 If the time taken by the robot to walk is considered equivalent to the number of steps, then when the policy is optimal, the number of steps should be minimized. The following graph illustrates the relationship between the number of updates and the number of steps:
+<div align=center>
+<img src="https://github.com/algellar/Grid_world/blob/main/figure/curve.png" width = "300" height = "270" />
+</div>
 
 Before updates, the robot's movements are entirely random, resulting in a high number of steps to reach the endpoint. As the number of updates increases, the number of steps stabilizes. Fluctuations are attributed to the epsilon-greedy strategy employed.
 
